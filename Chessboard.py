@@ -55,6 +55,10 @@ class Chessboard:
                         aux_Depth += 1
                         aux_Pos += 1
 
+                    if checks > 4:
+                        print("Not Possible")
+                        return False
+
 
 x = Chessboard(4, 1)
 print(x.Board)
